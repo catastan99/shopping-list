@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+.Header img{
+    width:15%;
+    height: auto;
+}
+.Header{
+    display: flex;
+    align-items: center;  
+    border-bottom: 2px solid black;
+}
+.Header p{
+    text-align: center;
+    width:70%;
+    font-size: 40px;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    
+}
