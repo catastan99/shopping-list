@@ -1,0 +1,73 @@
+.AddForm form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    row-gap: 20px;
+    color:rgb(5, 15, 58)
+}
+.AddForm form input, select{
+    width: 100%;
+    
+}
+.AddForm form .row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+
+}
+.AddForm form input, select{
+    outline: none;
+    border:none;
+    background-color: rgba(255, 255, 255, 0.986);
+    font-size:20px;
+    height: 30px;
+    font-family: 'Inconsolata', monospace;
+
+}
+.AddForm option{
+    background-color: white;
+    
+}
+
+.AddForm form input[type='submit']{
+    width: 25%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    color:white;
+    letter-spacing: 2px;
+    transition: all 1s;
+    background: rgb(4, 66, 124);
+}
+.AddForm{    
+    padding: 40px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.397); */
+    background: url('../assets/images/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+    background-size: 100% auto;    
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+.AddForm form .row .container-input{
+    display: flex;
+    flex-direction: row;
+}
+.AddForm form .row .container-input {
+    width: 100%;
+}
+.AddForm form .row .container-input input {
+    width: 95%;
+}
+.AddForm form .row .container-input .input-check-icon {
+    width: 5%;
+    
+}
+.AddForm form input[type='submit']:hover{
+    background-color: rgb(25, 157, 190);
+    color:white;
+}
+.AddForm form  input::placeholder{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
