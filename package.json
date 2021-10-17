@@ -1,5 +1,6 @@
 {
   "name": "shopping-list",
+  "homepage": "http://shopping.stancatalin.eu/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

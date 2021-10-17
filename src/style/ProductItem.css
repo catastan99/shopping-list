@@ -22,3 +22,18 @@
     text-align: center;
     
 }
+
+@media screen and (max-width:500px) {
+    .ProductItem{
+        width: 90%;
+    }
+
+    .ProductItem h3{
+        width: 60%;
+    }
+
+    .ProductItem p{
+        width: 40%;
+        font-size: 15px;
+    }
+}
