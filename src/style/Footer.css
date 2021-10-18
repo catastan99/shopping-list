@@ -3,5 +3,24 @@
     width: 100%;
     margin-top:50px;
     margin-bottom: 10px;
+    display: grid;  
+    grid-template-columns: 50% 50%;  
+    justify-items: center;
+    row-gap: 5px;
+}
+.Footer p{
+    width:100%;
+    
+   
 }
 
+.Footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Footer a{
+    text-decoration: none;
+    color:black;
+}
