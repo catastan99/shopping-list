@@ -6,6 +6,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import ProductList from './Components/ProductList';
 
+
 class App extends React.Component {
 
   constructor(){
@@ -13,23 +14,23 @@ class App extends React.Component {
     this.state={
         products:[
           {
-            id:"0",
+            id:0,
             name: "Apa plata",
             quantity: "10",
-            unit: "kg"
+            unit: "bucati"
           },
           {
-            id:"1",
-            name: "Tymbark",
-            quantity: "1011",
-            unit: "litri"
+            id:1,
+            name: "Zahar",
+            quantity: "100",
+            unit: "grame"
 
           },
           {
-            id:"2",
-            name: "Tymbark",
-            quantity: "1011",
-            unit: "litri"
+            id:2,
+            name: "Portocale",
+            quantity: "5",
+            unit: "kilograme"
 
           }
         ]
@@ -50,13 +51,27 @@ class App extends React.Component {
 
   }
 
+  deleteProduct(id){
+    const products=[...this.state.products];
+    const index = products.map((product, index)=>{
+      console.log(id, product.id);
+      if(product.id===id)
+        products.splice(index,1);
+       return null;
+    })
+    console.log(index);
+    
+    console.log(products);
+    this.setState({products});
+  }
+
   render(){
   return (
 
     <div className="App">
         <Header />
         <AddForm submitAddForm={(product)=> this.submitAddForm(product)}/>
-        <ProductList products={this.state.products} />
+        <ProductList products={this.state.products} deleteProduct={(id)=>this.deleteProduct(id)} />
         <Footer />
     </div>
   );

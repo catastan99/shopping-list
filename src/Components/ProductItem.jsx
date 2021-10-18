@@ -1,6 +1,7 @@
 
 import React from 'react';
 import '../style/ProductItem.css';
+import {ReactComponent as DeleteIcon} from '../assets/icons/DeleteIcon.svg';
 
 class ProductItem extends React.Component {
     constructor(props){
@@ -15,7 +16,11 @@ class ProductItem extends React.Component {
         if(event.currentTarget.style.borderLeftColor==="red")
             this.setState({color:"green"});
             else this.setState({color:"red"});
-            console.log(this.state.color);
+            
+    }
+
+    handleDeleteProduct(id){
+        this.props.deleteProduct(id);
     }
 
     render(){
@@ -25,7 +30,7 @@ class ProductItem extends React.Component {
         <div className="ProductItem" id={id} onDoubleClick={(event) => this.handleChangeBorderColor(event)} style={{borderLeftColor:this.state.color}} >
             <h3>{name}</h3>
             <p>{quantity} {unit}</p>
-            
+            <DeleteIcon title="Sterge produs" onClick={()=>this.handleDeleteProduct(id)}  />
         </div>
     )
 

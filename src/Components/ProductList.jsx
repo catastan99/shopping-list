@@ -3,7 +3,9 @@ import '../style/ProductList.css';
 import ProductItem from './ProductItem';
 
 function ProductList(props) {
-    const {products}  = props;
+    const {products, deleteProduct}  = props;
+
+    
     return (
         <div className="ProductList">
             {
@@ -14,6 +16,7 @@ function ProductList(props) {
                             unit={product.unit}
                             id={product.id}
                             key={product.id}
+                            deleteProduct={(id)=>deleteProduct(id)}
                            />
                 } )
             }
