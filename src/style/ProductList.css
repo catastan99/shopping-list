@@ -1,14 +1,15 @@
-.ProductList{
-    min-height: 30vh;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-    /* margin-top:-50px; */
+.ProductList {
+  min-height: 30vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
 }
 
-@media screen and (max-width:500px) {
-
+@media screen and (max-width: 500px) {
+  .ProductList {
+    min-height: 40vh;
+  }
 }
